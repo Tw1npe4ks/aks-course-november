@@ -13,7 +13,7 @@ spec:
         app: nodesel-demo
     spec:
       nodeSelector:
-        kubernetes.io/os: linux
+        kubernetes.io/os: windows
       containers:
       - name: nodesel-demo
         image: nginx

@@ -18,7 +18,7 @@ spec:
       command:
         - sh
         - -c
-        - exit 1
+        - exit 0
   containers:
   - name: simple-init
     image: nginx

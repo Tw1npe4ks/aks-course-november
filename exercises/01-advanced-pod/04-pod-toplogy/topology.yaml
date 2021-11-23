@@ -14,8 +14,8 @@ spec:
     spec:
       topologySpreadConstraints:
         - maxSkew: 1
-          topologyKey: kubernetes.azure.com/agentpool
-          whenUnsatisfiable: DoNotSchedule
+          topologyKey: topology.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
           labelSelector:
             matchLabels:
               app: topo-demo
